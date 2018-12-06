@@ -12,7 +12,7 @@ ui <- dashboardPage(
         tabName = "model",
         icon = icon("clipboard")
       ),
-      menuItem("Map", tabName = "map", icon = icon("map-marked-alt"))
+      menuItem("Map", tabName = "map", icon = icon("map"))
     )
   ),
   # Body
@@ -41,13 +41,6 @@ ui <- dashboardPage(
                   height = 500,
                   width = 250
                 )
-              ),
-              box(
-                width = 12,
-                title = "What Does This App Do",
-                solidHeader = T,
-                status = "primary",
-                htmlOutput(outputId="text5")
               )
             )),
     tabItem(tabName = "eda",
@@ -55,32 +48,34 @@ ui <- dashboardPage(
               tabPanel('Demographic Features', fluidRow(
                 box(
                   width = 12,
-                  title = 'Percentage',
+                  status = "primary",
                   highchartOutput(outputId = "demo_1", height = 500)
                 ),
                 box(
                   width = 12,
-                  title = 'Population',
+                  status = "primary",
                   highchartOutput(outputId = "demo_2", height = 125)
                 ),
                 box(
                   width = 12,
-                  title = 'Median',
+                  status = "primary",
                   highchartOutput(outputId = "demo_3", height = 250)
                 ),
                 box(
                   width = 12,
-                  title = 'Others',
+                  status = "primary",
                   highchartOutput(outputId = "demo_4", height = 125)
                 )
               )),
               tabPanel('Restaurants Features', fluidRow(
                 box(
                   width = 12,
+                  status = "primary",
                   highchartOutput(outputId = "res_1", height = 800)
                 ),
                 box(
                   width = 12,
+                  status = "primary",
                   highchartOutput(outputId = "res_2", height = 200)
                 )
               ))
@@ -91,7 +86,6 @@ ui <- dashboardPage(
                 width = 12,
                 status = "primary",
                 htmlOutput(outputId="text0")
-                #imageOutput(outputId = "step1_gen_shap")
               ),
               box(
                 width = 12,
@@ -118,12 +112,12 @@ ui <- dashboardPage(
                   height = 300,
                   width = 500
                 )
-                #imageOutput(outputId = "step1_nongen_shap")
               )
             )),
     tabItem(tabName = "map",
             fluidRow(box(
               width = 12,
+              status = "primary",
               fluidRow(
                 column(
                   5,
@@ -209,18 +203,22 @@ ui <- dashboardPage(
                     multiple = TRUE
                   )
                 ),
-                column(2, actionButton(inputId = "submit", label = "Submit"))
+                column(2, actionButton(inputId = "submit", label = "Submit", icon = icon("refresh")))
               )
             )),
             fluidRow(
               box(
                 width = 6,
                 title = "Gentrifying Areas",
+                solidHeader = T,
+                status = "primary",
                 leafletOutput(outputId = "map_gen", height = 500)
               ),
               box(
                 width = 6,
                 title = "Non Gentrified Areas",
+                solidHeader = T,
+                status = "primary",
                 leafletOutput(outputId = "map_nongen", height = 500)
               )
             ))
