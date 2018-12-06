@@ -1,18 +1,18 @@
 ui <- dashboardPage(
-  dashboardHeader(title = "Does Gentrification Affect Restaurant Popularity?", titleWidth = 500),
+  dashboardHeader(title = "Smart Strategy for NYC Restaurant Starters", titleWidth = 500),
   skin = "red",
   # Sidebar
   dashboardSidebar(
     sidebarMenu(
       id = "menu",
-      menuItem("Welcome", tabName = "WelcomePage", icon = icon("book")),
-      menuItem("Overview", tabName = "eda", icon = icon("chart-bar")),
+      menuItem("Introduction", tabName = "WelcomePage", icon = icon("book")),
+      menuItem("Data Overview", tabName = "eda", icon = icon("chart-bar")),
       menuItem(
-        "Model Output",
+        "Model Outputs",
         tabName = "model",
         icon = icon("clipboard")
       ),
-      menuItem("Map", tabName = "map", icon = icon("map"))
+      menuItem("Maps", tabName = "map", icon = icon("map"))
     )
   ),
   # Body
