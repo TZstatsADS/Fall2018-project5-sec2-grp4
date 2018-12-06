@@ -1,4 +1,4 @@
-# ADS Project 5:
+# ADS Project 5: CSC DataFest 2018 Fall
 
 Term: Fall 2018
 
@@ -9,7 +9,7 @@ Term: Fall 2018
 	+ Lujia Wang
 + Project links
 	+ [Python notebook](https://github.com/TZstatsADS/Fall2018-project5-sec2proj5-grp4/blob/master/doc/xgboost_model.ipynb): codes for data cleaning and model fitting
-	+ [Shiny App]()
+	+ [Shiny App](https://lujiaw.shinyapps.io/SmartStrategyForNYCRestaurantStarter/): Smart Strategy for NYC Restaurant Starters
 + Project summary:
 In this project, we are trying to answer the following questions: What affects restaurant popularity? Are there differences between gentrifying and non-gentrifying areas?
 
