@@ -23,13 +23,31 @@ ui <- dashboardPage(
                 width = 12,
                 title = "What Is Gentrification",
                 solidHeader = T,
-                status = "primary"
+                status = "primary",
+                htmlOutput(outputId="text3"),
+                htmlOutput(outputId="text4"),
+                img(
+                  src = "NYC_sba.png",
+                  height = 500,
+                  width = 500
+                ),
+                img(
+                  src = "blank.png",
+                  height = 500,
+                  width = 150
+                ),
+                img(
+                  src = "sba_class.png",
+                  height = 500,
+                  width = 250
+                )
               ),
               box(
                 width = 12,
                 title = "What Does This App Do",
                 solidHeader = T,
-                status = "primary"
+                status = "primary",
+                htmlOutput(outputId="text5")
               )
             )),
     tabItem(tabName = "eda",
@@ -59,12 +77,10 @@ ui <- dashboardPage(
               tabPanel('Restaurants Features', fluidRow(
                 box(
                   width = 12,
-                  title = 'Category',
                   highchartOutput(outputId = "res_1", height = 800)
                 ),
                 box(
                   width = 12,
-                  title = 'Price',
                   highchartOutput(outputId = "res_2", height = 200)
                 )
               ))
@@ -72,26 +88,37 @@ ui <- dashboardPage(
     tabItem(tabName = "model",
             fluidRow(
               box(
-                width = 6,
-                title = 'Step 1 - Gentrifying',
-                htmlOutput(outputId = "step1_gen_shap")
+                width = 12,
+                status = "primary",
+                htmlOutput(outputId="text0")
+                #imageOutput(outputId = "step1_gen_shap")
               ),
               box(
-                width = 6,
-                title = 'Step 1 - Non Gentrified',
-                htmlOutput(outputId = "step1_nongen_shap")
-              )
-            ),
-            fluidRow(
-              box(
-                width = 6,
-                title = 'Step 2 - Gentrifying',
-                htmlOutput(outputId = "step2_gen_shap")
-              ),
-              box(
-                width = 6,
-                title = 'Step 2 - Non Gentrified',
-                htmlOutput(outputId = "step2_nongen_shap")
+                width = 12,
+                status = "primary",
+                htmlOutput(outputId="text1"),
+                img(
+                  src = "Gentri_step1.png",
+                  height = 300,
+                  width = 500
+                ),
+                img(
+                  src = "Nongen_step1.png",
+                  height = 300,
+                  width = 500
+                ),
+                htmlOutput(outputId="text2"),
+                img(
+                  src = "Gentri_step2.png",
+                  height = 300,
+                  width = 500
+                ),
+                img(
+                  src = "Nongen_step2.png",
+                  height = 300,
+                  width = 500
+                )
+                #imageOutput(outputId = "step1_nongen_shap")
               )
             )),
     tabItem(tabName = "map",
