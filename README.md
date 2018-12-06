@@ -17,11 +17,11 @@ In this project, we are trying to answer the following questions: What affects r
 To uncover these questions, we first performed EDA on our data, which consisted of two parts, the sub-borough demographics, and the restaurant features (data extracted from Yelp API).
 
 ![image](figs/xgboost.png)
-Next, we defined the popularity index, which adjusted the over-high ratings with only a small number of reviews. Then, we applied the XGBoost model in two steps and used the SHAP plots to show how the strongest predictors affect the popularity.
+Next, we defined the popularity index, which adjusted the over-high ratings with only a small number of reviews. Then, we applied the XGBoost model for each of the gentrifying and non-gentrifying areas in two steps, and used the SHAP plots to show how the strongest predictors affect the popularity.
 
-	+ In the first step, we explored the relationship between the sub-borough statistics and the restaurant popularity to give insights on how to choose the right place.
++ In the first step, we explored the relationship between the sub-borough statistics and the restaurant popularity to give insights on how to choose the right place.
 
-	+ In the second step, we regressed the residuals obtained from the first step on the restaurant features and discussed how pricing and service can further add value to the business.
++ In the second step, we regressed the residuals obtained from the first step on the restaurant features and discussed how pricing and service can further add value to the business.
 
 ![image](figs/map.png)
 Finally, we visualized the data on the map. The blue shades represent the sub-borough demographics, and the red dots represent the popularity score for each restaurant. User can select service types and price levels to filter the restaurants.
