@@ -7,9 +7,22 @@ Term: Fall 2018
 + Team members
 	+ Xiaojing Dong
 	+ Lujia Wang
++ Project links
+	+ [Python notebook](https://github.com/TZstatsADS/Fall2018-project5-sec2proj5-grp4/blob/master/doc/xgboost_model.ipynb): codes for data cleaning and model fitting
+	+ [Shiny App]()
 + Project summary:
+In this project, we are trying to answer the following questions: What affects restaurant popularity? Are there differences between gentrifying and non-gentrifying areas?
 
+![image](figs/EDA.png)
+To uncover these questions, we first performed EDA on our data, which consisted of two parts, the sub-borough demographics, and the restaurant features (data extracted from Yelp API).
 
+![image](figs/model.png)
+Next, we defined the popularity index, which adjusted the over-high ratings with only a small number of reviews. Then, we applied the XGBoost model in two steps and used the SHAP plots to show how the strongest predictors affect the popularity.
+	+ In the first step, we explored the relationship between the sub-borough statistics and the restaurant popularity to give insights on how to choose the right place.
+	+ In the second step, we regressed the residuals obtained from the first step on the restaurant features and discussed how pricing and service can further add value to the business.
+
+![image](figs/map.png)
+Finally, we visualized the previous findings on the map. The blue shades represent the sub-borough demographics, and the red dots represent the popularity score for each restaurant. User can also select service types and price levels to filter the restaurants.
 
 	
 **Contribution statement**:
