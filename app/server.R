@@ -152,7 +152,8 @@ server <- function(input, output) {
         stroke = F,
         color = ~ heat_color(PUMA_Demo_gen@data[, demographic]),
         fillOpacity = 0.8,
-        smoothFactor = 0.2
+        smoothFactor = 0.2,
+        highlightOptions = highlightOptions(stroke = T, color="white", weight=2, opacity = 1,bringToFront = F, sendToBack = F)
       ) %>%
       addLegend(
         "bottomright",
@@ -206,7 +207,8 @@ server <- function(input, output) {
         stroke = F,
         color = ~ heat_color(PUMA_Demo_nongen@data[, demographic]),
         fillOpacity = 0.8,
-        smoothFactor = 0.2
+        smoothFactor = 0.2,
+        highlightOptions = highlightOptions(stroke = T, color="white", weight=2, opacity = 1,bringToFront = F, sendToBack = F)
       ) %>%
       addLegend(
         "bottomright",
