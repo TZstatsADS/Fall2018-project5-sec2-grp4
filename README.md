@@ -37,7 +37,7 @@ Finally, we visualized the data on the map. The blue shades represent the sub-bo
 + [Gentrifucation study by NYU Furman Center](http://furmancenter.org/files/sotc/Part_1_Gentrification_SOCin2015_9JUNE2016.pdf)
 + [NYC Housing Data](http://app.coredata.nyc/?mlb=false&ntii=&ntr=&mz=14&vtl=https%3A%2F%2Fthefurmancenter.%20carto.com%2Fu%2Fnyufc%2Fapi%2Fv2%2Fviz%2F691a2b7c-94d7-46ac-ac4d-9a589cb2c6ed%20%2Fviz.json&mln=false&mlp=true&mlat=40.718&ptsb=&nty=&mb=roadmap&pf=%7B%22subsidies%22%3Atrue%2C%22subsid%20ies%22%3Atrue%7D&md=map&mlv=false&mlng=-73.996&btl=Borough&atp=properties)
 + [Yelp API](https://www.yelp.com/developers)
-+ [Neighborhood Tabulation Areas](https://www1.nyc.gov/site/planning/data-maps/open-data/dwn-nynta.page
++ [Neighborhood Tabulation Areas](https://www1.nyc.gov/site/planning/data-maps/open-data/dwn-nynta.page)
 
 Following [suggestions](http://nicercode.github.io/blog/2013-04-05-projects/) by [RICH FITZJOHN](http://nicercode.github.io/about/#Team) (@richfitz). This folder is orgarnized as follows.
 
