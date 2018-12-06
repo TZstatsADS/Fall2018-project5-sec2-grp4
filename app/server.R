@@ -101,7 +101,7 @@ server <- function(input, output) {
           "<font color=\"#666666\"><font size=5><b><li>","First Step: Land Your Restaurant in the Right Place","</li></b></font></br>",
           "<font color=\"#666666\"><font size=4>","Explore the relationship between the sub-borough statistics and restaurant popularity","</br>",
           "Regress the popularity scores on the demographic variables using <code>XGboost</code> model","</br>",
-          "<div class = \"indented\">","Use SHAP plots to show the feature importance and how the strongest predictors affect the popularity (left: Gentrifying areas; right: Non-gentrifying areas.","</font></br>",
+          "<div class = \"indented\">","Use SHAP plots to show the feature importance and how the strongest predictors affect the popularity (left: Gentrifying areas; right: Non-gentrifying areas).","</font></br>",
           "<font size=3><i><ul><li>","Each row represents a predictor and every restaurant has one dot on each row.","</li>",
           "<li>","The horizontal position of the dot is the impact of that predictor on the popularity score.","</li>",
           "<li>","The color of the dot represents the value of that predictor (with red color representing higher scores and blue representing lower ones).","</li></ul></i></font></div>",

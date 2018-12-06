@@ -180,7 +180,7 @@ ui <- dashboardPage(
                       "Serious crime rate" =
                         'm_crime_all_rt'
                     ),
-                    selected = 'pop_pov_u18_pct'
+                    selected = 'pop_pov_pct'
                   )
                 ),
                 column(
