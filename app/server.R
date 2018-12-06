@@ -81,13 +81,13 @@ server <- function(input, output) {
     hchart(category_freq,
            'bar',
            hcaes(x = 'category', y = 'density', group = 'class')) %>% 
-      hc_title(text="Food Category",style=list(fontWeight="bold",fontSize="15px"))
+      hc_title(text="Food Category",style=list(fontWeight="bold",fontSize="15px")) %>% hc_xAxis(title = list(text = NULL))
   })
   output$res_2 <- renderHighchart({
     hchart(price_freq,
            'bar',
            hcaes(x = 'price', y = 'density', group = 'class')) %>%
-      hc_title(text="Price Level",style=list(fontWeight="bold",fontSize="15px"))
+      hc_title(text="Price Level",style=list(fontWeight="bold",fontSize="15px")) %>% hc_xAxis(title = list(text = NULL))
   })
   # model output - SHAP
   output$text0 <- renderText({
