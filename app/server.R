@@ -13,7 +13,7 @@ server <- function(input, output) {
   output$text4 <- renderText({
     paste("<font color=\"#666666\"><font size=4>There were 22 NYC Sub-Borough Areas (SBA) that were low-income in 1990 (in the bottom 40 percent
            with respect to average household income) experienced rent growth
-           between 1990 and 2010-2014. According to a study by NYU Furman Center, 15 of them were classified as “gentrifying,” meaning they
+           between 1990 and 2010-2014. According to <a href=\"http://furmancenter.org/files/sotc/Part_1_Gentrification_SOCin2015_9JUNE2016.pdf\">a study by NYU Furman Center</a>, 15 of them were classified as “gentrifying,” meaning they
            experienced rent increases higher than the median SBA. The map shows that gentrifying neighborhoods are concentrated in or 
            near Manhattan. The remaining seven low-income neighborhoods are classified as “non-gentrifying” neighborhoods. 
           Neighborhoods in the top 60 percent of the 1990 neighborhood income distribution are classified as “higher-income.”</font></br></br>")

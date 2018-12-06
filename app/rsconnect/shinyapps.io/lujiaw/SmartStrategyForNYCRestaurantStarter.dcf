@@ -5,6 +5,6 @@ account: lujiaw
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 606841
-bundleId: 1745913
+bundleId: 1746048
 url: https://lujiaw.shinyapps.io/SmartStrategyForNYCRestaurantStarter/
-when: 1544110274.69693
+when: 1544112936.96041
